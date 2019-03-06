@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/github.css">
+    <title>GitHub Home Page</title>
+
+    <script>
+     /* function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+      alert("Name must be filled out");
+      return false;
+  }
+}*/
+      function validateEmail() {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+
+      function validatePassword(){
+        var passWord = 
+      }
+    </script>
+</head>
+<body>
+  <div class="layer">
+    </div>
+
+    <div id="header">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbaritem">
+      <a class="navbar-brand" href="#">
+        <img src="img/Capture.png" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" id="navitem" href="#">Why Github? <i class="fa fa-angle-down"></i></a>
+          <a class="nav-item nav-link" id="navitem" href="#">Enterprise</a>
+          <a class="nav-item nav-link" id="navitem" href="#">Explore <i class="fa fa-angle-down"></i></a>
+          <a class="nav-item nav-link" id="navitem" href="#">Marketplace</a>
+          <a class="nav-item nav-link" id="navitem" href="#">Pricing <i class="fa fa-angle-down"></i></a>
+           &nbsp;
+           &nbsp;
+          <input type="search" placeholder="Search Github" style="border: none; border-radius: 5px; 
+          background-color: #666666; color: white;">
+          &nbsp;
+          <a class="nav-item nav-link" id="navitem" href="#">Sign in</a>
+          &nbsp;
+          <button style="background-color: #323232; color: white;">Sign up</button>
+        </div>
+      </div>
+    </nav>
+  </div> 
+
+<div id="main">
+  <div class="text">
+    <span><h2>Built for <br> developers</h2></span>
+                 
+  <span style="color: #b2b2b2; font-size: 20px;">GitHub is a development platform inspired by the <br> way you work.
+    From <strong><a href="" style="text-decoration: none;"> open source</a></strong> to 
+  <strong><a href="" style="text-decoration: none;">business,</a></strong> you <br>can host and review code,manage projects and <br>
+      build software alongside 31 million developers.</span>
+             </div>
+<div class="form">
+   <form name="myForm" action="action_page.php" onsubmit="return validateEmail()" method="post">
+      <label>Username</label>
+           <br>
+        <input type="text" placeholder=" Pick a username" maxlength="10" required>
+            <br>
+        <label>Email</label>
+            <br>
+        <input type="email" placeholder=" you@example.com" required>
+            <br>
+        <label>Password</label>
+            <br>
+        <input type="password" placeholder=" Create a password" required>
+         <p>Make sure it's<span style="color: red;"> more than 15 characters</span> OR 
+          <span style="color: red;">at least 8 characters including a number and a lowercase letter.</span>
+          <a href="">Learn more.</a>
+            </p>
+          <a href=""><button id="Submit" type="submit" value="submit">Sign up for GitHub</button></a>
+            <p>By clicking "Sign up for GitHub", you agree to our <a href="">terms of service </a>and 
+              <a href="">privacy statement</a>. We'll occasionally send you account related emails.
+              </p>    
+        </form>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    background-image: url("../img/code.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.layer{
+    background-color: #323232;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+}
+#header{
+    width: 100%;
+    display: inline;
+    margin: auto;
+}
+#navbaritem{
+    padding-left: 200px;
+    text-align: center;
+}
+#navitem{
+    color: white;
+}
+div.text{
+    width: 35%;
+    padding: 10px;
+    float: left;
+    margin-left:200px;
+    margin-top: 150px;
+}
+.form{
+    width: 32%;
+    float: right;
+    background-color: white;
+    color: #191919;
+    margin-top: 100px;
+    margin-right: 200px;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button#Submit{
+    width: 100%; 
+    line-height: 60px;
+    border-style: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    background-color: green;
+    color: white;
+    opacity: 0.8;
+}
+h2{
+    font-size: 70px;
+    font-weight: 800;
+}
+input[type="text"]{
+    width: 100%;
+    line-height: 45px;
+    border-radius: 5px;
+}
+input[type="password"]{
+    width: 100%;
+    line-height: 45px;
+    border-radius: 5px;
+}
+input[type="email"]{
+    width: 100%;
+    line-height: 45px;
+    border-radius: 5px;
+}
+p{
+    font-size: 12px;
+}
